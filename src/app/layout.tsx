@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head></head>
-      <body className={`font-sans antialiased`}>
+      <body className={`${inter.className} font-sans antialiased`}>
         <Navbar />
         {children}
         <Analytics />

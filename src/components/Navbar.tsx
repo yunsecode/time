@@ -18,7 +18,7 @@ export function Navbar() {
         <div className="inner">
           <Link href="/" className="logo">
             <Image
-              src="/timmo-logo.svg"
+              src="/timmo-icon.svg"
               alt="TIMMO"
               width={140}
               height={40}
