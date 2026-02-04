@@ -1,164 +1,164 @@
 .header {
-  position: fixed;
-  z-index: 50;
-  top: 16px;
-  right: 0;
-  left: 0;
-  padding: 0 16px;
+    position: fixed;
+    z-index: 50;
+    top: 16px;
+    right: 0;
+    left: 0;
+    padding: 0 16px;
 }
 
 .nav {
-  margin: 0 auto;
-  border-radius: 999px;
-  padding: 8px 24px;
-  max-width: 1280px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+    border-radius: 999px;
+    padding: 8px 24px;
+    max-width: 1280px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
-  width: 120px;
-  height: 32px;
+    width: 120px;
+    height: 32px;
 
-  @media (min-width: 768px) {
-    width: 140px;
-    height: 40px;
-  }
+    @media (min-width: 768px) {
+        width: 140px;
+        height: 40px;
+    }
 }
 /* Desktop */
 
 .desktopNav {
-  display: none;
-  align-items: center;
-  gap: 24px;
+    display: none;
+    align-items: center;
+    gap: 24px;
 
-  a {
-    color: #0f1729;
-    font-weight: 500;
-    font-size: 14px;
-    text-decoration: none;
-    transition: color 0.2s ease;
+    a {
+        color: #0f1729;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        transition: color 0.2s ease;
 
-    &:hover {
-      color: #6b7280;
+        &:hover {
+            color: #6b7280;
+        }
     }
-  }
 
-  @media (min-width: 1024px) {
-    display: flex;
-  }
+    @media (min-width: 1024px) {
+        display: flex;
+    }
 }
 
 .calendly {
-  border: 2px solid #0f1729;
-  border-radius: 999px;
-  padding: 8px 20px;
-  color: #0f1729;
-  font-size: 14px;
-  background: white;
-  transition: all 0.3s ease;
+    border: 2px solid #0f1729;
+    border-radius: 999px;
+    padding: 8px 20px;
+    color: #0f1729;
+    font-size: 14px;
+    background: white;
+    transition: all 0.3s ease;
 
-  &:hover {
-    background: #b8e986;
-  }
+    &:hover {
+        background: #b8e986;
+    }
 }
 
 .invest {
-  border-radius: 999px;
-  padding: 8px 20px;
-  color: white;
-  font-size: 14px;
-  background: #0f1729;
-  transition: all 0.3s ease;
+    border-radius: 999px;
+    padding: 8px 20px;
+    color: white;
+    font-size: 14px;
+    background: #0f1729;
+    transition: all 0.3s ease;
 
-  &:hover {
-    background: #618eff;
-    transform: scale(1.05);
-  }
+    &:hover {
+        background: #618eff;
+        transform: scale(1.05);
+    }
 }
 /* Mobile */
 
 .mobile {
-  display: block;
+    display: block;
 
-  @media (min-width: 1024px) {
-    display: none;
-  }
+    @media (min-width: 1024px) {
+        display: none;
+    }
 }
 
 .burger {
-  border: none;
-  color: #0f1729;
-  font-size: 24px;
-  background: none;
-  cursor: pointer;
+    border: none;
+    color: #0f1729;
+    font-size: 24px;
+    background: none;
+    cursor: pointer;
 }
 
 .mobileMenu {
-  position: absolute;
-  top: 100%;
-  right: 16px;
-  margin-top: 8px;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  background: white;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-  min-width: 200px;
-  gap: 12px;
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    margin-top: 8px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    min-width: 200px;
+    gap: 12px;
 
-  a {
-    color: #374151;
-    font-size: 14px;
-    text-decoration: none;
+    a {
+        color: #374151;
+        font-size: 14px;
+        text-decoration: none;
 
-    &:hover {
-      color: #111827;
+        &:hover {
+            color: #111827;
+        }
     }
-  }
 
-  hr {
-    margin: 8px 0;
-  }
+    hr {
+        margin: 8px 0;
+    }
 }
 
 .calendlyMobile {
-  border: 2px solid #0f1729;
-  border-radius: 999px;
-  width: 100%;
-  padding: 10px;
-  color: #0f1729;
-  font-size: 14px;
-  background: white;
+    border: 2px solid #0f1729;
+    border-radius: 999px;
+    width: 100%;
+    padding: 10px;
+    color: #0f1729;
+    font-size: 14px;
+    background: white;
 
-  &:hover {
-    border-color: #b8e986;
-    background: #b8e986;
-  }
+    &:hover {
+        border-color: #b8e986;
+        background: #b8e986;
+    }
 }
 
 .investMobile {
-  border-radius: 999px;
-  width: 100%;
-  padding: 10px;
-  color: white;
-  font-size: 14px;
-  background: #0f1729;
+    border-radius: 999px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    background: #0f1729;
 
-  &:hover {
-    background: #618eff;
-    transform: scale(1.05);
-  }
+    &:hover {
+        background: #618eff;
+        transform: scale(1.05);
+    }
 }
 
 .hidden {
-  display: none;
+    display: none;
 }

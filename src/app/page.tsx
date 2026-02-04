@@ -1,10 +1,9 @@
-import {Button} from '@mui/material';
+import { Button } from '@mui/material';
 
 export default function Home() {
-  return (
-    <div>
-      <Button variant="contained">Hello, Timmo!</Button>
-    </div>
-  );
+    return (
+        <div>
+            <Button variant="contained">Hello, Timmo!</Button>
+        </div>
+    );
 }
-
