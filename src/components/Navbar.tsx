@@ -2,15 +2,16 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-// import { Button } from '@/components/ui/button';
-// import { CalendlyButton } from '@/components/calendly-button';
 import '@/styles/landing.scss';
+import { Button, IconButton } from '@mui/material';
+import { useState } from 'react';
 
 export function Navbar() {
-    //   const toggleMobileMenu = () => {
-    //     const menu = document.getElementById('mobile-menu');
-    //     menu?.classList.toggle(styles.hidden);
-    //   };
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
 
     return (
         <header className="header">
@@ -32,27 +33,18 @@ export function Navbar() {
                         <a href="/#avantages">Avantages</a>
                         <a href="/#faq">FAQ</a>
 
-                        {/* <CalendlyButton className="calendly">
-              Rendez-vous
-            </CalendlyButton> */}
+                        <Button variant="outlined">Rendez-vous</Button>
 
-                        <Link href="/newsletter">
-                            {/* <Button className="invest">
-                Investir
-              </Button> */}
-                        </Link>
+                        <Button variant="filled">Investir</Button>
                     </div>
 
-                    {/* Mobile */}
+                    {/* ================================ Mobile ================================ */}
                     <div className="mobile">
-                        {/* <button
-              onClick={toggleMobileMenu}
-              className="burger"
-            >
-              ☰
-            </button> */}
+                        <IconButton onClick={toggleMobileMenu}>☰</IconButton>
 
-                        <div id="mobile-menu" className="mobileMenu hidden">
+                        <div
+                            className={`mobileMenu ${!isMobileMenuOpen ? 'hidden' : ''}`}
+                        >
                             <a href="/#comment-ca-marche">
                                 Comment ça marche ?
                             </a>
@@ -64,15 +56,9 @@ export function Navbar() {
 
                             <hr />
 
-                            {/* <CalendlyButton className="calendlyMobile">
-                Rendez-vous
-              </CalendlyButton> */}
+                            <Button variant="outlined">Rendez-vous</Button>
 
-                            <Link href="/newsletter">
-                                {/* <Button className="investMobile">
-                  Investir
-                </Button> */}
-                            </Link>
+                            <Button variant="filled">Investir</Button>
                         </div>
                     </div>
                 </div>
