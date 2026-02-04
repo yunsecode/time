@@ -1,6 +1,10 @@
-import Image from "next/image";
+import {Button} from '@mui/material';
+
 export default function Home() {
   return (
-    <div></div>
+    <div>
+      <Button variant="contained">Hello, Timmo!</Button>
+    </div>
   );
 }
+
