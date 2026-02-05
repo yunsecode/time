@@ -4,7 +4,7 @@ import { ArrowRight } from '@mui/icons-material';
 import { Button, Link } from '@mui/material';
 import Image from 'next/image';
 import '@/styles/home/section5.scss';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useLayoutEffect } from 'react';
 import { useRouter } from 'next/navigation';
 const properties = [
     {
@@ -56,7 +56,7 @@ export default function Section5() {
     const [cardsPerView, setCardsPerView] = useState(1);
     const router = useRouter();
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const getCardsPerView = () => {
             if (window.innerWidth < 768) return 1;
             if (window.innerWidth < 1024) return 2;
