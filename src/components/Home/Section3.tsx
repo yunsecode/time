@@ -3,6 +3,7 @@
 import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import '@/styles/home/section3.scss';
+import { Button } from '@mui/material';
 
 interface Card {
     id: number;
@@ -101,17 +102,21 @@ export function Section3() {
                         <h2>Comment investir grâce à TIMMO ?</h2>
 
                         <p className="description">
-                            La tokenisation immobilière permet d&apos;acheter
-                            des parts numériques (tokens) d&apos;un bien
-                            immobilier, à partir de 10 euros rendant
-                            l&apos;investissement accessible à tous. Chaque
-                            token représente une fraction de propriété,
-                            démocratisant ainsi un secteur auparavant réservé
-                            aux investisseurs avec des capitaux importants.
+                            La {'"'}tokenisation immobilière{'"'} permet
+                            d&apos;acheter des parts numériques (tokens)
+                            d&apos;un bien immobilier, à partir de {'"'}10 euros
+                            {'"'} rendant l&apos;investissement accessible à
+                            tous. Chaque token représente une fraction de
+                            propriété, démocratisant ainsi un secteur auparavant
+                            réservé aux investisseurs avec des capitaux
+                            importants.
                         </p>
 
                         <div className="buttons-wrapper">
-                            {/* Buttons here */}
+                            <Button variant="filled-dark">Commencer</Button>
+                            <Button variant="filled-light">
+                                Contacter un conseiller
+                            </Button>
                         </div>
                     </div>
 
