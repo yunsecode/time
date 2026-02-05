@@ -17,7 +17,7 @@
 
             .left-content {
                 width: 100%;
-                height: fit-content;
+                height: 600px;
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
@@ -25,7 +25,7 @@
 
                 @media (min-width: 1024px) {
                     position: sticky;
-                    top: 8rem;
+                    top: 112px;
                 }
 
                 .section-label {
@@ -81,7 +81,7 @@
 
                 .cards-stack {
                     position: relative;
-                    height: 2700px;
+                    height: 2400px;
 
                     .card {
                         position: sticky;
@@ -94,7 +94,10 @@
                             0 20px 25px -5px rgba(0, 0, 0, 0.1),
                             0 10px 10px -5px rgba(0, 0, 0, 0.04);
                         transition: all 0.7s ease-in-out;
-                        // Background colors
+
+                        :last-child {
+                            margin-bottom: 0;
+                        }
 
                         &[data-bg='blue'] {
                             background-color: #618eff;
