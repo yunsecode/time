@@ -1,6 +1,5 @@
 'use client';
 
-import { ArrowRight } from '@mui/icons-material';
 import { Button, Link } from '@mui/material';
 import Image from 'next/image';
 import '@/styles/home/section6.scss';

@@ -1,11 +1,11 @@
 'use client';
 
-import { ArrowRight } from '@mui/icons-material';
 import { Button, Link } from '@mui/material';
 import Image from 'next/image';
 import '@/styles/home/section7.scss';
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import { ArrowRight } from 'lucide-react';
 
 export default function Section7() {
     return (

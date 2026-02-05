@@ -1,9 +1,9 @@
 'use client';
 
-import { ArrowRight } from '@mui/icons-material';
 import { Button, Link } from '@mui/material';
 import Image from 'next/image';
 import '@/styles/footer.scss';
+import { ArrowRight } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -41,7 +41,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Button variant="text-arrow">
+                                <Button variant="outlined">
                                     Contacter un conseiller
                                     <ArrowRight />
                                 </Button>
