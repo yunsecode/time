@@ -269,27 +269,28 @@
         .press-carousel {
             position: relative;
             overflow: hidden;
+            width: 100%;
 
             .carousel-track {
                 display: flex;
-                animation: scroll-reverse 30s linear infinite;
+                width: fit-content;
+                animation: scroll-reverse 40s linear infinite;
 
                 .logo-group {
                     display: flex;
                     flex-shrink: 0;
                     align-items: center;
-                    padding-right: 4rem;
                     gap: 4rem;
-                    white-space: nowrap;
+                    margin-right: 4rem;
 
                     @media (min-width: 768px) {
-                        padding-right: 5rem;
                         gap: 5rem;
+                        margin-right: 5rem;
                     }
 
                     @media (min-width: 1024px) {
-                        padding-right: 6rem;
                         gap: 6rem;
+                        margin-right: 6rem;
                     }
 
                     img {
