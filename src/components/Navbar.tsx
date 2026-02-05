@@ -35,7 +35,7 @@ export function Navbar() {
 
                         <Button variant="outlined">Rendez-vous</Button>
 
-                        <Button variant="filled">Investir</Button>
+                        <Button variant="filled-dark">Investir</Button>
                     </div>
 
                     {/* ================================ Mobile ================================ */}
@@ -58,7 +58,7 @@ export function Navbar() {
 
                             <Button variant="outlined">Rendez-vous</Button>
 
-                            <Button variant="filled">Investir</Button>
+                            <Button variant="filled-dark">Investir</Button>
                         </div>
                     </div>
                 </div>

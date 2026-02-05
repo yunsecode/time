@@ -39,7 +39,7 @@ const theme = createTheme({
             },
             variants: [
                 {
-                    props: { variant: 'filled' },
+                    props: { variant: 'filled-dark' },
                     style: {
                         backgroundColor: '#0F1729',
                         color: '#fff',
@@ -48,6 +48,20 @@ const theme = createTheme({
                         transition: 'all 0.3s ease-in-out',
                         '&:hover': {
                             backgroundColor: '#618EFF',
+                            transform: 'scale(1.05)'
+                        }
+                    }
+                },
+                {
+                    props: { variant: 'filled-light' },
+                    style: {
+                        backgroundColor: '#fff',
+                        color: '#0F1729',
+                        fontWeight: 500,
+                        transition: 'all 0.3s ease-in-out',
+                        '&:hover': {
+                            backgroundColor: '#b8e986',
+                            color: '#0F1729',
                             transform: 'scale(1.05)'
                         }
                     }

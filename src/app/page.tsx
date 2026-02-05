@@ -1,10 +1,12 @@
+import Section1 from '@/components/Home/Section1';
+import Section2 from '@/components/Home/Section2';
 import { Button } from '@mui/material';
 
 export default function Home() {
     return (
-        <div style={{ marginTop: '200px' }}>
-            <Button variant="filled">Hello, Timmo!</Button>
-            <Button variant="outlined">Hello, Timmo!</Button>
-        </div>
+        <>
+            <Section1 />
+            <Section2 />
+        </>
     );
 }
