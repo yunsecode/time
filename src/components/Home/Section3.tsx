@@ -9,9 +9,8 @@ interface Card {
     icon: React.ReactNode;
     title: string;
     description: string;
-    bgClass: string;
-    textClass: string;
-    iconBgClass: string;
+    bg: 'blue' | 'light-green' | 'green' | 'dark';
+    iconBg: 'white-20' | 'white-70' | 'white-10';
 }
 
 const cards: Card[] = [
@@ -30,9 +29,8 @@ const cards: Card[] = [
         title: 'Créer votre Compte en quelques clics',
         description:
             'Remplissez notre formulaire, et validez votre identité en quelques clics !',
-        bgClass: 'bg-blue',
-        textClass: 'text-white',
-        iconBgClass: 'bg-white-20'
+        bg: 'blue',
+        iconBg: 'white-20'
     },
     {
         id: 2,
@@ -49,9 +47,8 @@ const cards: Card[] = [
         title: 'Déposer votre Capital',
         description:
             "Déposez uniquement le montant que vous souhaitez investir ! Une manière sûre de répondre à vos objectifs financiers, tout en respectant vos possibilités d'épargne.",
-        bgClass: 'bg-light-green',
-        textClass: 'text-dark',
-        iconBgClass: 'bg-white-70'
+        bg: 'light-green',
+        iconBg: 'white-70'
     },
     {
         id: 3,
@@ -68,9 +65,8 @@ const cards: Card[] = [
         title: 'Investissez dans notre catalogue de biens',
         description:
             'Choisissez le bien immobilier qui correspond le mieux à vos préférences et investissez en quelques clics !',
-        bgClass: 'bg-green',
-        textClass: 'text-dark',
-        iconBgClass: 'bg-white-70'
+        bg: 'green',
+        iconBg: 'white-70'
     },
     {
         id: 4,
@@ -87,18 +83,14 @@ const cards: Card[] = [
         title: 'Recevez vos loyers',
         description:
             'Chaque mois, vous percevez vos revenus passifs directement dans votre portefeuil Timmo. Ré-investissez les, ou bien profitez-en !',
-        bgClass: 'bg-dark',
-        textClass: 'text-white',
-        iconBgClass: 'bg-white-10 text-white'
+        bg: 'dark',
+        iconBg: 'white-10'
     }
 ];
 
 export function Section3() {
-    const [currentCardIndex, setCurrentCardIndex] = useState(0);
-    const containerRef = useRef<HTMLDivElement>(null);
-
     return (
-        <section ref={containerRef} className="section3">
+        <section className="section3">
             <div className="container">
                 <div className="grid-container">
                     <div className="left-content">
@@ -128,27 +120,17 @@ export function Section3() {
                             {cards.map((card, index) => (
                                 <div
                                     key={card.id}
-                                    className={`card ${card.bgClass} ${
-                                        index === currentCardIndex
-                                            ? 'active'
-                                            : index < currentCardIndex
-                                              ? 'past'
-                                              : 'future'
-                                    }`}
+                                    className="card"
+                                    data-bg={card.bg}
                                 >
                                     <div
-                                        className={`icon-wrapper ${card.iconBgClass}`}
+                                        className="icon-wrapper"
+                                        data-icon-bg={card.iconBg}
                                     >
                                         {card.icon}
                                     </div>
-                                    <h3
-                                        className={`card-title ${card.textClass}`}
-                                    >
-                                        {card.title}
-                                    </h3>
-                                    <p
-                                        className={`card-description ${card.textClass === 'text-white' ? 'text-white' : 'text-gray'}`}
-                                    >
+                                    <h3 className="card-title">{card.title}</h3>
+                                    <p className="card-description">
                                         {card.description}
                                     </p>
                                 </div>

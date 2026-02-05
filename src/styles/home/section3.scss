@@ -78,57 +78,75 @@
 
         .cards-stack {
             position: relative;
-            height: 400px;
-
-            @media (min-width: 1024px) {
-                position: sticky;
-                top: 8rem;
-            }
+            height: 2084px;
 
             .card {
-                position: absolute;
+                position: sticky;
+                top: 112px;
+                margin-bottom: 2rem;
                 border-radius: 1.5rem;
                 padding: 2rem;
-                inset: 0;
                 box-shadow:
                     0 20px 25px -5px rgba(0, 0, 0, 0.1),
                     0 10px 10px -5px rgba(0, 0, 0, 0.04);
                 transition: all 0.7s ease-in-out;
+                // Background colors
 
-                &.active {
+                &[data-bg='blue'] {
+                    background-color: #618eff;
+                    .card-title,
+                    .card-description {
+                        color: white;
+                    }
+                }
+
+                &[data-bg='light-green'] {
+                    background-color: #e8f5d0;
+                    .card-title,
+                    .card-description {
+                        color: #0f1729;
+                    }
+                }
+
+                &[data-bg='green'] {
+                    background-color: #c8e5a0;
+                    .card-title,
+                    .card-description {
+                        color: #0f1729;
+                    }
+                }
+
+                &[data-bg='dark'] {
+                    background-color: #0f1729;
+
+                    .card-title {
+                        color: white;
+                    }
+
+                    .card-description {
+                        color: #d1d5db;
+                    }
+                }
+                // States
+
+                &[data-state='active'] {
                     z-index: 10;
                     opacity: 1;
                     transform: translateY(0) scale(1);
                 }
 
-                &.past {
+                &[data-state='past'] {
+                    z-index: 0;
+                    opacity: 0.5;
+                    transform: translateY(0) scale(0.95);
+                    pointer-events: none;
+                }
+
+                &[data-state='future'] {
                     z-index: 0;
                     opacity: 0;
                     transform: translateY(2rem) scale(0.95);
                     pointer-events: none;
-                }
-
-                &.future {
-                    z-index: 0;
-                    opacity: 0;
-                    transform: translateY(-2rem) scale(0.95);
-                    pointer-events: none;
-                }
-
-                &.bg-blue {
-                    background-color: #618eff;
-                }
-
-                &.bg-light-green {
-                    background-color: #e8f5d0;
-                }
-
-                &.bg-green {
-                    background-color: #c8e5a0;
-                }
-
-                &.bg-dark {
-                    background-color: #0f1729;
                 }
 
                 .icon-wrapper {
@@ -145,19 +163,25 @@
                         height: 1.5rem;
                     }
 
-                    &.bg-white-20 {
+                    &[data-icon-bg='white-20'] {
                         background-color: rgba(255, 255, 255, 0.2);
+
+                        svg {
+                            color: white;
+                        }
                     }
 
-                    &.bg-white-70 {
+                    &[data-icon-bg='white-70'] {
                         background-color: rgba(255, 255, 255, 0.7);
+
+                        svg {
+                            color: #0f1729;
+                        }
                     }
 
-                    &.bg-white-10 {
+                    &[data-icon-bg='white-10'] {
                         background-color: rgba(255, 255, 255, 0.1);
-                    }
 
-                    &.text-white {
                         svg {
                             color: white;
                         }
@@ -168,26 +192,10 @@
                     margin-bottom: 0.75rem;
                     font-weight: bold;
                     font-size: 1.5rem;
-
-                    &.text-white {
-                        color: white;
-                    }
-
-                    &.text-dark {
-                        color: #0f1729;
-                    }
                 }
 
                 .card-description {
                     line-height: 1.75;
-
-                    &.text-white {
-                        color: #d1d5db;
-                    }
-
-                    &.text-gray {
-                        color: #6b7280;
-                    }
                 }
             }
         }
