@@ -4,6 +4,7 @@ import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import '@/styles/home/section3.scss';
 import { Button } from '@mui/material';
+import { HelpCircle } from 'lucide-react';
 
 interface Card {
     id: number;
@@ -96,6 +97,7 @@ export default function Section3() {
                 <div className="grid-container">
                     <div className="left-content">
                         <div className="section-label">
+                            <HelpCircle className="h-5 w-5" />
                             <span>Comment ça marche ?</span>
                         </div>
 

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import '@/styles/home/section5.scss';
 import { useEffect, useState, useLayoutEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
 const properties = [
     {
         id: '1',
@@ -89,7 +90,7 @@ export default function Section5() {
                 <div className="section5-header">
                     <div className="left">
                         <div className="section-label">
-                            {/* <BookOpen className="h-5 w-5" /> */}
+                            <BookOpen className="h-5 w-5" />
                             <span>Catalogue</span>
                         </div>
                         <h2>Performances de nos biens</h2>
@@ -237,7 +238,7 @@ export default function Section5() {
                                     className="arrow-button"
                                     aria-label="Previous slide"
                                 >
-                                    {/* <ChevronLeft /> */}
+                                    <ChevronLeft />
                                 </button>
                                 <button
                                     onClick={nextSlide}
@@ -245,7 +246,7 @@ export default function Section5() {
                                     className="arrow-button"
                                     aria-label="Next slide"
                                 >
-                                    {/* <ChevronRight /> */}
+                                    <ChevronRight />
                                 </button>
                             </div>
                         </div>

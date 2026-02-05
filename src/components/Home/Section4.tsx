@@ -1,16 +1,16 @@
 'use client';
 
-import { ArrowRight } from '@mui/icons-material';
 import { Button, Link } from '@mui/material';
 import Image from 'next/image';
 import '@/styles/home/section4.scss';
+import { ArrowRight, Coins, FileText, Heart } from 'lucide-react';
 
 export default function Section4() {
     return (
         <section className="section4">
             <div className="section4-header">
                 <div className="section-label">
-                    {/* <Heart className="h-5 w-5" /> */}
+                    <Heart className="h-5 w-5" />
                     <span>Avantages</span>
                 </div>
 
@@ -31,7 +31,7 @@ export default function Section4() {
                     {/* Card 1 - Notre service s'adapte */}
                     <div className="card green">
                         <div className="icon-wrapper">
-                            {/* <Coins className="h-6 w-6 md:h-7 md:w-7 text-[#0F1729]" /> */}
+                            <Coins className="h-6 w-6 md:h-7 md:w-7 text-[#0F1729]" />
                         </div>
 
                         <div>
@@ -51,7 +51,7 @@ export default function Section4() {
                     {/* Card 2 - Une fiscalité avantageuse */}
                     <div className="card gray">
                         <div className="icon-wrapper">
-                            {/* <FileText className="h-6 w-6 md:h-7 md:w-7 text-[#0F1729]" /> */}
+                            <FileText className="h-6 w-6 md:h-7 md:w-7 text-[#0F1729]" />
                         </div>
 
                         <div>
@@ -62,12 +62,10 @@ export default function Section4() {
                                 Les investissements via TIMMO ne sont pas soumis
                                 à l&apos;impôt sur la fortune immobilière !
                             </p>
-                            <button className="cta-button">
+                            <Button variant="outlined">
                                 Qu&apos;est ce que la flat tax ?
-                                <div className="arrow-circle">
-                                    <ArrowRight />
-                                </div>
-                            </button>
+                                <ArrowRight />
+                            </Button>
                         </div>
                     </div>
                 </div>
@@ -99,21 +97,19 @@ export default function Section4() {
                                 </p>
 
                                 <div className="buttons">
-                                    {/* <Link href="/onboarding">
-                                        <Button variant="filled">
-                                            Contacter un conseiller
-                                            <ArrowRight />
-                                        </Button>
-                                    </Link> */}
+                                    <Button variant="filled-dark">
+                                        Contacter un conseiller
+                                        <ArrowRight />
+                                    </Button>
                                     <a
                                         href="https://calendly.com/dan-calvo-timmo/rendez-vous-decouverte-timmo"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        {/* <Button variant="ghost">
+                                        <Button variant="outlined">
                                             Comment ça marche ?
                                             <ArrowRight />
-                                        </Button> */}
+                                        </Button>
                                     </a>
                                 </div>
                             </div>

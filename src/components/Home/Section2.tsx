@@ -1,13 +1,18 @@
 'use client';
 
-import { ArrowRight, ArrowLeft } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import '@/styles/home/section2.scss';
-
-// Icon components (you'll need to install lucide-react or use MUI icons)
-// import { Eye, CreditCard, Lock, Leaf, PiggyBank } from 'lucide-react';
+import {
+    ArrowLeft,
+    ArrowRight,
+    CreditCard,
+    Leaf,
+    PiggyBank,
+    Lock,
+    Eye
+} from 'lucide-react';
 
 export default function Section2() {
     return (
@@ -16,7 +21,7 @@ export default function Section2() {
                 {/* Left Content */}
                 <div className="left-content">
                     <div className="section-label">
-                        {/* <Eye /> */}
+                        <Eye />
                         <span>Qu&apos;est-ce que c&apos;est ?</span>
                     </div>
 
@@ -37,7 +42,7 @@ export default function Section2() {
                     <div className="features-grid">
                         <div className="feature-item">
                             <div className="icon-wrapper">
-                                {/* <CreditCard /> */}
+                                <CreditCard />
                             </div>
                             <div>
                                 <p className="feature-text">
@@ -61,7 +66,9 @@ export default function Section2() {
                         </div>
 
                         <div className="feature-item">
-                            <div className="icon-wrapper">{/* <Lock /> */}</div>
+                            <div className="icon-wrapper">
+                                <Lock />
+                            </div>
                             <div>
                                 <p className="feature-text">
                                     Gestion transparente et sécurisée
@@ -70,7 +77,9 @@ export default function Section2() {
                         </div>
 
                         <div className="feature-item">
-                            <div className="icon-wrapper">{/* <Leaf /> */}</div>
+                            <div className="icon-wrapper">
+                                <Leaf />
+                            </div>
                             <div>
                                 <p className="feature-text">
                                     Pas de tracas de Gestion
@@ -80,7 +89,7 @@ export default function Section2() {
 
                         <div className="feature-item">
                             <div className="icon-wrapper">
-                                {/* <PiggyBank /> */}
+                                <PiggyBank />
                             </div>
                             <div>
                                 <p className="feature-text">

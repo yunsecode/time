@@ -1,9 +1,9 @@
 'use client';
 
-import { ArrowRight } from '@mui/icons-material';
 import { Button } from '@mui/material';
 import Image from 'next/image';
 import '@/styles/home/section1.scss';
+import { ArrowRight } from 'lucide-react';
 
 export default function Section1() {
     return (

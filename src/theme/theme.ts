@@ -4,7 +4,7 @@ const theme = createTheme({
     components: {
         MuiButton: {
             defaultProps: {
-                variant: 'filled'
+                variant: 'filled-dark'
             },
             styleOverrides: {
                 root: {

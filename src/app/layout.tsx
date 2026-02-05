@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { Navbar } from '@/components/Navbar';
 import ThemeRegistry from '@/theme/ThemeRegistry';
 import '@/styles/main.scss';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({
                 <ThemeRegistry>
                     <Navbar />
                     {children}
+                    <Footer />
                     <Analytics />
                 </ThemeRegistry>
             </body>
