@@ -58,7 +58,7 @@ export default function Section1() {
                                 src="/modern-minimalist-house-interior-with-large-window.jpg"
                                 alt="Modern Interior"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                         <div className="image-wrapper">
@@ -66,7 +66,7 @@ export default function Section1() {
                                 src="/modern-contemporary-house-exterior-with-clean-line.jpg"
                                 alt="Modern Exterior"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                     </div>
@@ -78,7 +78,7 @@ export default function Section1() {
                                 src="/modern-minimalist-house-interior-with-large-window.jpg"
                                 alt="Modern Interior"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                         <div className="image-wrapper">
@@ -86,7 +86,7 @@ export default function Section1() {
                                 src="/modern-contemporary-house-exterior-with-clean-line.jpg"
                                 alt="Modern Exterior"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function Section1() {
                                 src="/modern-minimalist-house-interior-with-large-window.jpg"
                                 alt="Modern Interior"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                         </div>
                     </div>
@@ -114,6 +114,7 @@ export default function Section1() {
                                     alt="Le Parisien"
                                     width={140}
                                     height={40}
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/le-monde-logo.png"
@@ -121,6 +122,7 @@ export default function Section1() {
                                     width={160}
                                     height={40}
                                     className="le-monde"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/le-figaro-magazine-logo.png"
@@ -128,6 +130,7 @@ export default function Section1() {
                                     width={140}
                                     height={50}
                                     className="le-figaro"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/bfm-business-logo.png"
@@ -135,12 +138,14 @@ export default function Section1() {
                                     width={120}
                                     height={40}
                                     className="bfm"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/entrepreneur-logo.png"
                                     alt="Entrepreneur"
                                     width={180}
                                     height={40}
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/inc-logo.png"
@@ -148,6 +153,7 @@ export default function Section1() {
                                     width={120}
                                     height={40}
                                     className="inc"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                             </div>
                             {/* Duplicate for seamless loop */}
@@ -157,6 +163,7 @@ export default function Section1() {
                                     alt="Le Parisien"
                                     width={140}
                                     height={40}
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/le-monde-logo.png"
@@ -164,6 +171,7 @@ export default function Section1() {
                                     width={160}
                                     height={40}
                                     className="le-monde"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/le-figaro-magazine-logo.png"
@@ -171,6 +179,7 @@ export default function Section1() {
                                     width={140}
                                     height={50}
                                     className="le-figaro"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/bfm-business-logo.png"
@@ -178,12 +187,14 @@ export default function Section1() {
                                     width={120}
                                     height={40}
                                     className="bfm"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/entrepreneur-logo.png"
                                     alt="Entrepreneur"
                                     width={180}
                                     height={40}
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                                 <Image
                                     src="/inc-logo.png"
@@ -191,6 +202,7 @@ export default function Section1() {
                                     width={120}
                                     height={40}
                                     className="inc"
+                                    style={{ width: 'auto', height: 'auto' }}
                                 />
                             </div>
                         </div>

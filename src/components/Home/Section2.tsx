@@ -149,7 +149,7 @@ export default function Section2() {
                                                     src="/exterior.jpg"
                                                     alt="Property"
                                                     fill
-                                                    className="object-cover"
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                                 />
                                                 <div className="badge">
                                                     5 parts
@@ -174,7 +174,7 @@ export default function Section2() {
                                                     src="/interior.jpg"
                                                     alt="Property"
                                                     fill
-                                                    className="object-cover"
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                                 />
                                                 <div className="badge">
                                                     7 parts

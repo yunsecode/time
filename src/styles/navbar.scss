@@ -107,13 +107,17 @@
     right: 16px;
     margin-top: 8px;
     border-radius: 16px;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 16px;
     background: white;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
     min-width: 200px;
     gap: 12px;
+
+    &.open {
+        display: flex;
+    }
 
     a {
         color: #374151;
@@ -157,8 +161,4 @@
         background: #618eff;
         transform: scale(1.05);
     }
-}
-
-.hidden {
-    display: none;
 }

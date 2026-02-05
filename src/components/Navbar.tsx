@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import '@/styles/landing.scss';
+import '@/styles/navbar.scss';
 import { Button, IconButton } from '@mui/material';
 import { useState } from 'react';
 
@@ -43,7 +43,7 @@ export function Navbar() {
                         <IconButton onClick={toggleMobileMenu}>☰</IconButton>
 
                         <div
-                            className={`mobileMenu ${!isMobileMenuOpen ? 'hidden' : ''}`}
+                            className={`mobileMenu ${isMobileMenuOpen ? 'open' : ''}`}
                         >
                             <a href="/#comment-ca-marche">
                                 Comment ça marche ?
