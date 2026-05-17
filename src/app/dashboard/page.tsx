@@ -472,6 +472,11 @@ export default function DashboardPage() {
                                                 variant="filled-dark"
                                                 fullWidth
                                                 sx={{ py: 1.25 }}
+                                                onClick={() =>
+                                                    router.push(
+                                                        `/property/${property.id}`
+                                                    )
+                                                }
                                             >
                                                 Voir le bien
                                                 <ArrowRight

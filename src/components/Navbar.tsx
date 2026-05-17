@@ -20,7 +20,8 @@ export function Navbar() {
         '/forgot-password',
         '/reset-password'
     ];
-    if (standalonePages.includes(pathname)) return null;
+    if (standalonePages.includes(pathname) || pathname.startsWith('/property/'))
+        return null;
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);

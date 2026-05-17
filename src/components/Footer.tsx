@@ -17,7 +17,8 @@ export default function Footer() {
         '/forgot-password',
         '/reset-password'
     ];
-    if (standalonePages.includes(pathname)) return null;
+    if (standalonePages.includes(pathname) || pathname.startsWith('/property/'))
+        return null;
 
     return (
         <footer className="footer">

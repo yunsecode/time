@@ -17,3 +17,17 @@ export async function listProperties(
     if (error) throw error;
     return (data ?? []) as Property[];
 }
+
+export async function getProperty(
+    supabase: SupabaseClient,
+    id: string
+): Promise<Property | null> {
+    const { data, error } = await supabase
+        .from('properties')
+        .select('*')
+        .eq('id', id)
+        .single();
+
+    if (error) return null;
+    return data as Property;
+}

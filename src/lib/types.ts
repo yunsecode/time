@@ -2,6 +2,25 @@
 
 export type PropertyStatus = 'draft' | 'published' | 'coming_soon' | 'funded';
 
+// Contenu éditorial flexible — colonne jsonb `details`
+export type PropertyDetails = {
+    highlights?: {
+        title?: string;
+        intro?: string;
+        items?: { title: string; text: string }[];
+    };
+    investment?: {
+        intro?: string;
+        items?: { label: string; value: string }[];
+    };
+    resale?: { label: string; value: string; note?: string }[];
+    market?: {
+        intro?: string;
+        items?: { title: string; value: string; note?: string }[];
+    };
+    gallery?: string[];
+};
+
 export type Property = {
     id: string;
     name: string;
@@ -13,6 +32,9 @@ export type Property = {
     total_shares: number;
     reserved_shares: number;
     status: PropertyStatus;
+    description: string | null;
+    annual_yield: number | null;
+    details: PropertyDetails | null;
     created_at: string;
 };
 
