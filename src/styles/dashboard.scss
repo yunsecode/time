@@ -16,12 +16,11 @@
 
 .dash-nav {
     margin: 0 auto;
-    max-width: 72rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 80rem;
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     border-radius: 9999px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     padding: 0.5rem 1rem;
 
     @media (min-width: 768px) {
@@ -34,6 +33,17 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+}
+
+/* Logo aligné sur l'en-tête de la page d'accueil */
+.dash-logo img {
+    width: 120px;
+    height: 32px;
+
+    @media (min-width: 768px) {
+        width: 140px;
+        height: 40px;
+    }
 }
 
 .dash-tabs {

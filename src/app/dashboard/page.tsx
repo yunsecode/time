@@ -169,8 +169,8 @@ export default function DashboardPage() {
                             <Image
                                 src="/timmo-logo.svg"
                                 alt="TIMMO"
-                                width={100}
-                                height={32}
+                                width={140}
+                                height={40}
                             />
                         </Link>
 
