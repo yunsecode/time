@@ -2,10 +2,23 @@
 
 import { Button, Link } from '@mui/material';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import '@/styles/footer.scss';
 import { ArrowRight } from 'lucide-react';
 
 export default function Footer() {
+    const pathname = usePathname();
+
+    // Ces pages sont autonomes (sans pied de page)
+    const standalonePages = [
+        '/login',
+        '/onboarding',
+        '/dashboard',
+        '/forgot-password',
+        '/reset-password'
+    ];
+    if (standalonePages.includes(pathname)) return null;
+
     return (
         <footer className="footer">
             <div className="container">

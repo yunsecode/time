@@ -9,7 +9,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     textTransform: 'none',
-                    borderRadius: 9999
+                    borderRadius: '56px'
                 },
                 sizeSmall: {
                     height: 32,

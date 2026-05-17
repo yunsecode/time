@@ -104,7 +104,7 @@ export default function Section1() {
                     </div>
                 </div>
 
-                <div className="press-section">
+                {/* <div className="press-section">
                     <p className="press-title">ILS PARLENT DE NOUS</p>
                     <div className="press-carousel">
                         <div className="carousel-track">
@@ -156,7 +156,6 @@ export default function Section1() {
                                     style={{ width: 'auto', height: 'auto' }}
                                 />
                             </div>
-                            {/* Duplicate for seamless loop */}
                             <div className="logo-group">
                                 <Image
                                     src="/le-parisien-logo.png"
@@ -207,7 +206,7 @@ export default function Section1() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

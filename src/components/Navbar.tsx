@@ -2,15 +2,33 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import '@/styles/navbar.scss';
 import { Button, IconButton } from '@mui/material';
 import { useState } from 'react';
 
 export function Navbar() {
+    const pathname = usePathname();
+    const router = useRouter();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    // Ces pages ont leur propre en-tête
+    const standalonePages = [
+        '/login',
+        '/onboarding',
+        '/dashboard',
+        '/forgot-password',
+        '/reset-password'
+    ];
+    if (standalonePages.includes(pathname)) return null;
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const handleInvestir = () => {
+        // Le middleware redirige vers /login si l'utilisateur n'est pas connecté
+        router.push('/dashboard');
     };
 
     return (
@@ -35,7 +53,9 @@ export function Navbar() {
 
                         <Button variant="outlined">Rendez-vous</Button>
 
-                        <Button variant="filled-dark">Investir</Button>
+                        <Button variant="filled-dark" onClick={handleInvestir}>
+                            Investir
+                        </Button>
                     </div>
 
                     {/* ================================ Mobile ================================ */}
@@ -58,7 +78,12 @@ export function Navbar() {
 
                             <Button variant="outlined">Rendez-vous</Button>
 
-                            <Button variant="filled-dark">Investir</Button>
+                            <Button
+                                variant="filled-dark"
+                                onClick={handleInvestir}
+                            >
+                                Investir
+                            </Button>
                         </div>
                     </div>
                 </div>
