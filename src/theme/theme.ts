@@ -49,6 +49,12 @@ const theme = createTheme({
                         '&:hover': {
                             backgroundColor: '#618EFF',
                             transform: 'scale(1.05)'
+                        },
+                        // Sans cela, MUI passe le texte désactivé en noir
+                        '&.Mui-disabled': {
+                            backgroundColor: '#0F1729',
+                            color: '#fff',
+                            opacity: 0.5
                         }
                     }
                 },
